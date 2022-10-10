@@ -1,29 +1,25 @@
-﻿using System;
+﻿using ConsoleApp1;
+using System;
 
 namespace ClassObject
 {
-    class Laptop
+    class Program
     {
-        string? ssd;
-
         static void Main(string[] args)
         {
+            TestClass1 class1 = new TestClass1();
 
-            // create Laptop object 
-            Laptop dell = new Laptop();
+            class1.TestCase1("a b c");
+            class1.SetValue(123);
+            class1.GetValue();
 
-            // set ssd for dell
-            dell.ssd = "Samsung";
-            Console.WriteLine("SSD for Dell: " + dell.ssd);
+            TestClass1 class2 = new TestClass1();
 
-            // create second object of Laptop
-            Laptop asus = new Laptop();
+            class2.TestCase2("qwerty");
+            class2.SetValue(321);
+            class2.GetValue();
 
-            // set ssd for Asus
-            asus.ssd = "Seagate";
-            Console.WriteLine("SSD for Asus: " + asus.ssd);
-
-            //Console.ReadLine();
+            Console.Read();
         }
     }
 }
