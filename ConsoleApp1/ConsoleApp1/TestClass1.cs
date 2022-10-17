@@ -19,5 +19,10 @@ namespace ConsoleApp1
             int result = num1 + num2;
             Console.WriteLine("Rezultatul adunarii cu parametri este " + result + "\n");
         }
+
+        public int Add(int num1, int num2, int num3)
+        {
+            return num1 + num2 + num3;
+        }
     }
 }

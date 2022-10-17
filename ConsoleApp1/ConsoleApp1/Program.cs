@@ -31,6 +31,8 @@ namespace ClassObject
             testClass.Add();
             testClass.Add(3, 5);
 
+            int sum = testClass.Add(1, 2, 3);
+            Console.WriteLine("Adunare cu return: " + sum + "\n");
 
             Program car1 = new("BMW", 50000, "black", "diesel", "SUV");
             Console.WriteLine("Car: " + car1.brand + " " + car1.price + " " + car1.colour + " " + car1.type + " " + car1.body);
