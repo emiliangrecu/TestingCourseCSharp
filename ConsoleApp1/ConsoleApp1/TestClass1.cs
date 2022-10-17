@@ -11,13 +11,13 @@ namespace ConsoleApp1
     {
         public void Add()
         {
-            Console.WriteLine("Adunare fara parametri");
+            Console.WriteLine("Empty Add method");
         }
 
         public void Add(int num1, int num2)
         {
             int result = num1 + num2;
-            Console.WriteLine("Rezultatul adunarii cu parametri este " + result + "\n");
+            Console.WriteLine("Add method with parameters " + result + "\n");
         }
 
         public int Add(int num1, int num2, int num3)

@@ -32,10 +32,10 @@ namespace ClassObject
             testClass.Add(3, 5);
 
             int sum = testClass.Add(1, 2, 3);
-            Console.WriteLine("Adunare cu return: " + sum + "\n");
+            Console.WriteLine("Add method with return: " + sum + "\n");
 
             Program car1 = new("BMW", 50000, "black", "diesel", "SUV");
-            Console.WriteLine("Car: " + car1.brand + " " + car1.price + " " + car1.colour + " " + car1.type + " " + car1.body);
+            Console.WriteLine("Car -- Brand: " + car1.brand + "\nPrice: " + car1.price + " EUR \nColour: " + car1.colour + "\nType: " + car1.type + "\nBody: " + car1.body);
 
             Console.Read();
         }
