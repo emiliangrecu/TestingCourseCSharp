@@ -9,10 +9,14 @@ namespace ConsoleApp1
 {
     public class CarPage
     {
+        public string CarOwner(string name)
+        {
+            return name;
+        }
+
         public Car GetCarDetails()
         {
             return new Car();
         }
-
     }
 }

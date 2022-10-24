@@ -13,5 +13,6 @@ namespace ConsoleApp1.Models
         public string Type { get; set; } = "diesel";
         public string Colour { get; set; } = "black";
         public int Price { get; set; } = 50000;
+        public List<string> extras { get; set; } = new() { "Winter Pack", "Parking Pack" };
     }
 }

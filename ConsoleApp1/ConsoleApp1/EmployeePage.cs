@@ -9,7 +9,7 @@ namespace ConsoleApp1
 {
     class EmployeePage
     {
-        public string name;
+        protected string name;
 
         public void work(string work)
         {
