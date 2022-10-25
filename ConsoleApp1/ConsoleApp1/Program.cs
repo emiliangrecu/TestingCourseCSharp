@@ -34,6 +34,10 @@ namespace ClassObject
                 Console.WriteLine("Extras: " + carModel.extras[i]);
             }
 
+            var carDetails = owner.GetCarDetails();
+            var det = owner.CarDetails();
+            Console.WriteLine(det[0]);
+
             Console.Read();
         }
     }

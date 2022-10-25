@@ -18,5 +18,10 @@ namespace ConsoleApp1
         {
             return new Car();
         }
+
+        public List<string> CarDetails()
+        {
+            return new Car().extras;
+        }
     }
 }
