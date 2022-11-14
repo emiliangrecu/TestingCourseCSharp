@@ -41,6 +41,7 @@ namespace ClassObject
             testClass.UnaryOperators(20, true);
             testClass.TernaryOperator(42);
             testClass.TernaryOperator(11);
+            testClass.OperatorPrecedence(1, 2, 3);
 
             Console.Read();
         }

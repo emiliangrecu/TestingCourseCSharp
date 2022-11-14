@@ -49,5 +49,11 @@ namespace ConsoleApp1
             string result = (number % 3 == 0)? "divisible by 3" : "not divisible by 3";
             Console.WriteLine("{0} is {1}", number, result);
         }
+
+        public void OperatorPrecedence(int a, int b, int c)
+        {
+            int result = ++a + b / --c;
+            Console.WriteLine("{0} + {1} / {2} = {3}", a, b, c, result);
+        }
     }
 }
