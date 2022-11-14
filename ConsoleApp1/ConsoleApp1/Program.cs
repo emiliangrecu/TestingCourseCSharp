@@ -31,7 +31,13 @@ namespace ClassObject
             Console.WriteLine("Brand: " + carModel.Brand + "\nBody: " + carModel.Body + "\nType: " + carModel.Type + "\nColour: " + carModel.Colour + "\nPrice: " + carModel.Price + " EUR");
             for (int i = 0; i < carModel.extras.Count; i++)
             {
-                Console.WriteLine("Extras: " + carModel.extras[i]);
+                Console.WriteLine("Extras: " + carModel.extras[i] + "\n");
+            }
+
+            //Another way to read all items of a list
+            foreach (var ex in carModel.extras)
+            {
+                Console.WriteLine("Extras: " + ex);
             }
 
             var carDetails = owner.GetCarDetails();
@@ -43,6 +49,8 @@ namespace ClassObject
             testClass.TernaryOperator(11);
             testClass.OperatorPrecedence(1, 2, 3);
 
+
+            
             Console.Read();
         }
     }
